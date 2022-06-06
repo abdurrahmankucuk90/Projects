@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+.main-container {
+  font-family: "Lato", sans-serif;
+}
+.background-container-img1 {
+  background-image: url(./img/bg1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.7;
+}
+.background-container-img2 {
+  background-image: url(./img/bg2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* opacity: 0.7; */
+}
+.background-container-img3 {
+  background-image: url(./img/bg3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.background-container-img4 {
+  background-image: url(./img/bg4.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.background-container-img5 {
+  background-image: url(./img/bg5.jpg);
+  background-size: cover;
+  background-blend-mode: color-burn;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.img {
+  width: 99vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  /* opacity: 0.6; */
+}
+
+.heading-container {
+  display: block;
+  margin-bottom: 20%;
+  background-color: #4d4d4d;
+  color: white;
+  font-weight: 700;
+  font-size: 3rem;
+  padding: 2rem;
+  letter-spacing: .5rem;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  outline-offset: 1rem;
+  outline: 0.5rem inset purple;
+  /* opacity: 1; */
+}
+.box2 {
+  display: block;
+  margin-bottom: 20%;
+  /* width: 10px; */
+  /* opacity: 1; */
+}
+
+.heading-container__heading-logo {
+  width: 40rem;
+}
+
+.section-light,
+.section-dark {
+  height: fit-content;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 5rem;
+  gap: 1rem;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 25px;
+  opacity: 1;
+  
+}
+.section-light{
+    background-color: white;
+    color: #4d4d4d;
+}
+.section-dark {
+    background-color: #4d4d4d;
+    color: white;
+}
+
+
