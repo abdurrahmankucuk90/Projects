@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Checkout</div>
+      <div class="form">
+        <div class="info">
+          <h3>Contact information</h3>
+          <div class="box email">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="box phone">
+            <label for="phone">Phone</label>
+            <input type="text" name="phone" id="phone" />
+          </div>
+        </div>
+        <div class="shipping">
+          <h3>Shipping address</h3>
+          <div class="box fullname">
+            <label for="fullname">Full Name</label>
+            <input type="text" name="fullName" id="fullname" />
+          </div>
+          <div class="box address">
+            <label for="address">Address</label>
+            <input type="text" name="address" id="address" />
+          </div>
+          <div class="box city">
+            <label for="city">City</label>
+            <input type="text" name="city" id="city" />
+          </div>
+
+          <div class="countries">
+            <label for="country" class="countries__input">Country</label>
+            <select id="countries" class="countries__input">
+              <option value="Turkey" selected>Turkey</option>
+              <option value="Turkey">Turkey</option>
+              <option value="Turkey">Turkey</option>
+            </select>
+          </div>
+          <div class="post">
+            <label class="post__input" for="postcode">Postcode</label>
+            <input
+              type="text"
+              name="postcode"
+              class="post__input"
+              id="postcode"
+            />
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" name="" id="checkbox" />
+            <label for="checkbox">enter</label>
+          </div>
+        </div>
+      </div>
+      <div class="shop">
+        <!-- <div class="shop__main">
+        </div> -->
+        <div class="box1 canta">
+          <div class="img">
+            <img src="./IMG/photo1.png" alt="" />
+          </div>
+          <div class="adet">
+            <h3>Vintage Backbag</h3>
+            <p>
+              $54.99 <span><s>$94.99</s></span>
+            </p>
+            <div class="adet_cal">
+              <button class="dec-1"><i class="fa-solid fa-less-than"></i></button>
+              <p class="adet_inn1">0</p>
+              <!-- <input type="number" name="" class="adet_inn1"> -->
+              <button class="inc-1"><i class="fa-solid fa-greater-than"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="box1 ayakkabi">
+          <div class="img">
+            <img src="./IMG/photo2.png" alt="" />
+          </div>
+          <div class="adet">
+            <h3>Levi Shoes</h3>
+            <p>
+              $74.99 <span><s>$124.99</s></span>
+            </p>
+            <div class="adet_cal">
+              <button class="dec-2"><i class="fa-solid fa-less-than"></i></button>
+              <p class="adet_inn2">0</p>
+              <!-- <input type="number" name="" class="adet_inn2"> -->
+              <button class="inc-2"><i class="fa-solid fa-greater-than"></i></button>
+          </div>
+        </div>
+        <div class="box1 price">
+          <div class="box2 shippingPrice">
+            <h4>Shipping</h4>
+            <p>$<span class="sumPrice1">0</span></p>
+          </div>
+          <div class="box2 totalPrice">
+            <h4>Total</h4>
+            <p>$<span class="sumPrice2">0</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+
+      <input type="submit" value="Continue" />
+    </div>
+    <script src="price.js"></script>
+  </body>
+</html>
