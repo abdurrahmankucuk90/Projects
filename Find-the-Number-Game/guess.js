@@ -11,7 +11,7 @@ let b;
 let counter = 5;
 let max = 100;
 let min = 1;
-const confetti1 = document.querySelector("svg")
+
 console.log(randomNumber);
 
 button.addEventListener("click", () => {
@@ -31,6 +31,7 @@ button.addEventListener("click", () => {
       info.style.color = "red";
       counter--;
       input.value = "";
+      randomNumber = getRandomArbitrary(1, 100);
     } else if (input.value == randomNumber) {
       alert("Conguragulation you won");
       counter = 5;
@@ -38,7 +39,7 @@ button.addEventListener("click", () => {
       min = 1;
       input.value = "";
       info.innerText = "";
-      
+      randomNumber = getRandomArbitrary(1, 100);
     }
   } else if (counter == 0) {
     alert(`You lost, rigt number was ${randomNumber}`);
@@ -75,6 +76,7 @@ input.addEventListener("keydown", (e) => {
         min = 1;
         input.value = "";
         info.innerText = "";
+        randomNumber = getRandomArbitrary(1, 100);
       }
     } else if (counter == 0) {
       alert(`You lost, rigt number was ${randomNumber}`);
@@ -83,7 +85,7 @@ input.addEventListener("keydown", (e) => {
       min = 1;
       input.value = "";
       info.innerText = "";
+      randomNumber = getRandomArbitrary(1, 100);
     }
   }
 });
-
