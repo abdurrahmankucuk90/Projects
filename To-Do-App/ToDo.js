@@ -3,6 +3,7 @@ const givDate = document.querySelector("#toDate");
 const yazi = document.querySelector("#yazi")
 const labYazi = document.querySelector("#checkBoxValue")
 const arrDate = [];
+const boslist = []
 
 sub.addEventListener("click", () => {
   fixDate(givDate.value);
