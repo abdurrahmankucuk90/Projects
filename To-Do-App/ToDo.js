@@ -5,19 +5,6 @@ const labYazi = document.querySelector("#checkBoxValue");
 const toDoYazi = document.querySelector("#toDoText");
 const divs = document.querySelector(".div");
 const arrDate = [];
-// const createLi = document.createElement(`<li class="listElement">
-// <div class="toDoSentence">
-//   <div class="div">
-//     <label class="custom-checkbox">
-//       <input type="checkbox" name="duty" id="checkBox" value="toDo" />
-//       <span class="checkmark"></span>
-//     </label>
-//     <p id="checkBoxValue"></p>
-//     <p id="taskToDo"></p>
-//   </div>
-//   <i class="fa-solid fa-trash-can"></i>
-// </div>
-// </li>`)
 sub.addEventListener("click", () => {
   if (toDoYazi.value == 0) {
     alert("Please write something here");
