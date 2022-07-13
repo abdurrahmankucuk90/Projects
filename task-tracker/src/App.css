@@ -69,12 +69,14 @@ body {
   margin: 0.7rem;
   padding: 0.5rem 1rem;
   cursor: pointer;
+  height: auto;
 }
 
 .done {
   border-left: 10px solid rgb(102, 18, 77);
   text-decoration: line-through;
   background-color: darkgrey;
+  
 }
 
 .task h3 {

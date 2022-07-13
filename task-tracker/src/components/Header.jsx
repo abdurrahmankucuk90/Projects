@@ -30,7 +30,7 @@ const Header = ({ tasks, setTasks }) => {
     }
     setShow(!show);
   };
-  console.log(show);
+  // console.log(show);
 
   return (
     <header className="header">
