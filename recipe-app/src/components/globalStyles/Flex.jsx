@@ -5,6 +5,7 @@ const Flex = styled.div`
     justify-content: ${({justify})=> justify ? justify : 'center'};
     align-items: ${({align})=> align ? align : 'center'};
     flex-wrap: ${({wrap})=> wrap && wrap};
+    flex-direction:${({column}) => column && column};
 `;
 
 
