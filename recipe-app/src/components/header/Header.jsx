@@ -1,24 +1,50 @@
-import React from 'react'
-import { Button, FoodInput, FormContainer, HeaderContainer, MainHeader, Select } from './Header.style'
+import React from "react";
+import {
+  Button,
+  FoodInput,
+  FormContainer,
+  HeaderContainer,
+  MainHeader,
+  Select,
+} from "./Header.style";
 
-const Header = () => {
+const Header = ({ setQuery, setSelectedMeal, mealType, getData }) => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    getData();
+
+  };
+
   return (
     <HeaderContainer>
-      <MainHeader>FOOD APP</MainHeader>
-      <FormContainer>
-        <FoodInput placeholder='Search'/>
-        <Button>Search</Button>
-        <Select>
-          <option value="breakfast">Breakfast</option>
+      <MainHeader>Recipe App</MainHeader>
+      <FormContainer onClick={handleSubmit}>
+        <FoodInput
+          type="text"
+          placeholder="search"
+          onChange={(e) => setQuery(e.target.value)}
+        />
+        <Button type="submit">Search</Button>
+        <Select
+          name="mealType"
+          id="mealType"
+          onChange={(e) => setSelectedMeal(e.target.value)}
+        >
+          {mealType.map((meal, index) => (
+            <option key={index} value={meal.toLowerCase()}>
+              {meal}
+            </option>
+          ))}
+
+          {/* <option value="breakfast">Breakfast</option>
           <option value="lunch">Lunch</option>
           <option value="dinner">Dinner</option>
           <option value="snacks">Snacks</option>
-          <option value="teatime">Teatime</option>
+          <option value="teatime">Teatime</option> */}
         </Select>
-
       </FormContainer>
     </HeaderContainer>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
