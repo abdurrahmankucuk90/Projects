@@ -3,6 +3,8 @@
     margin: 0;
     box-sizing: border-box;
     color: white;
+    font-size: 2rem;
+    font-family: 'DynaPuff', cursive;
 }
 
 body{
@@ -10,15 +12,17 @@ body{
 }
 
 .container{
-    width: 200px;
-    height: 100px;
-    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    /* position: absolute;
     top: 50%;
-    left: 50%;
+    left: 50%; */
     transform: translate(-50% -50%);
     margin: auto;
+    margin-top: 5rem;
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
